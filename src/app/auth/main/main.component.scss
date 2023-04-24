@@ -1,11 +1,18 @@
 ion-content{
-    --ion-background-color:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 208, 220));
+    --ion-background-color:#a80025;
     font-family:Georgia, 'Times New Roman', Times, serif;
    
 }
 .btn{
-    --background:rgb(19, 57, 86);
+    --background:white;
+    color:black;
 }
 .btnn{
-    --background:rgb(39, 108, 142);
+    --background: rgb(55, 49, 49);
+    color: white;
+  
+}
+.imag{
+    margin-top: 100px;
+    margin-bottom: 90px;
 }

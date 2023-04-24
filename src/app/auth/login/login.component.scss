@@ -9,21 +9,25 @@ ion-icon{
     font-size: 24px;
  }
  ion-content{
-   //  --ion-background-color:linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 208, 220));
+    --ion-background-color:#a80025;
     font-family:Georgia, 'Times New Roman', Times, serif;
    
 }
  .btmm{
-    --background:rgb(19, 57, 86);
+    --background:rgb(55, 49, 49);
  }
  h1{
     font-weight: bolder;
-    color:rgb(19, 57, 86);
+    color:white;
     font-size: 28px;
-    // margin-top: 30%;
+    margin-top: 30px;
+    margin-bottom: 20%;
  }
  .design{
    
       border-radius: 60% 40% 40% 20% / 70% 50% 30% 25%;
     
+ }
+ .formbg{
+   --ion-background-color: white;
  }

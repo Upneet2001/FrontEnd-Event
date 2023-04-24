@@ -4,9 +4,9 @@
       <ion-title>Menu</ion-title>
     </ion-toolbar>
   </ion-header>
-  <ion-content color="light">
-    <h6 >Conference</h6>
-    <ion-list lines="none">
+  <ion-content class="menubg">
+    <h5 >Conference</h5>
+    <ion-list >
       <ion-item routerLink="/tabs/tab1">
         <ion-icon name="calendar"></ion-icon> &nbsp;
         <ion-label >Schedule</ion-label>
@@ -25,8 +25,8 @@
       </ion-item>
     </ion-list>
 
-    <h6 >Account</h6>
-    <ion-list lines="none">
+    <h5>Account</h5>
+    <ion-list >
       <ion-item routerLink="/auth/login">
         <ion-icon name="person"></ion-icon> &nbsp;
         <ion-label>Login</ion-label>
@@ -50,8 +50,8 @@
       </ion-item>
     </ion-list>
 
-    <h6 >Tutorial</h6>
-    <ion-list lines="none">
+    <h5>Tutorial</h5>
+    <ion-list >
       <ion-item>
         <ion-icon name="hammer"></ion-icon> &nbsp;
         <ion-label>Tutorial</ion-label>
@@ -158,9 +158,10 @@
   </ion-header>
   <ion-content>
     <ion-content class="ion-padding">
-      <h5 *ngFor = "let member of test" (click)="GetSessionId(member.sessionId)">
-        {{member.topic}}
-      </h5>
+      <h1 class="ion-text-center" style="color:#a80025">Upcoming Events</h1>
+      <div class="sessionbg" *ngFor = "let member of test" (click)="GetSessionId(member.sessionId)">
+       Event Name: {{member.topic}}
+      </div>
     </ion-content>
   </ion-content>
 </div>
