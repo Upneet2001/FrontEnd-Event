@@ -19,14 +19,20 @@ export class Tab1Page implements OnInit{
       this.test = dataa;
     })
   }
-  getSessionDetails(){
+
+  GetSessionId(id:any){
+    this.data2.getSessionId(id).subscribe(dta=>{
+      console.log(dta);
+    })
+  }
+//   getSessionDetails(){
   
-  this.data2.getSessionDetails().subscribe(response => {
-    this.sessionDetails = response;
+//   this.data2.getSessionDetails().subscribe(response => {
+//     this.sessionDetails = response;
    
-    console.log(this.sessionDetails);
-  })
-};
+//     console.log(this.sessionDetails);
+//   })
+// };
 }
 
 

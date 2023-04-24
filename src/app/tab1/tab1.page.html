@@ -158,10 +158,9 @@
   </ion-header>
   <ion-content>
     <ion-content class="ion-padding">
-      <h5 *ngFor = "let member of test" (click)="getSessionDetails()">
+      <h5 *ngFor = "let member of test" (click)="GetSessionId(member.sessionId)">
         {{member.topic}}
       </h5>
-     
     </ion-content>
   </ion-content>
 </div>

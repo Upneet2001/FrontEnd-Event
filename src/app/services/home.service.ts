@@ -8,6 +8,7 @@ import { HttpClient } from '@angular/common/http';
 export class HomeService {
 
   constructor(private http: HttpClient) { }
+
   getData(){
     return this.http.get<any>('http://localhost:5112/api/Speaker')
   }
@@ -15,7 +16,7 @@ export class HomeService {
   getSession(){
     return this.http.get<any>('http://localhost:5112/api/Session')
   }
-  getSessionDetails(){
-    return this.http.get<any>('http://localhost:5112/api/SessionDetail')
+  getSessionId(id:any){
+    return this.http.get<any>(`http://localhost:5112/api/Session/{id}?sessionid=${id}`)
   }
 }
